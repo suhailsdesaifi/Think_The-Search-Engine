@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think | The Search Engine</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- external tags -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1931a0e897.js" crossorigin="anonymous"></script>
+	<!-- end -->
+
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">Search Me: A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <!-- <div class="logo" aria-hidden="true">
+                Think
+            </div> -->
+
+
+            <div class="container">
+                <h2 class="title">
+                  <span class="title-word title-word-1">Think</span>
+                </h2>
+              </div>
+
+
+            <form id="searchBar" class="searchBar">
+                <label class="offscreen" for="search">Enter a search term ro phrase</label>
+                <input id="search" type="text" placeholder="Search here..." autocomplete="off" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms"><i class="fa-solid fa-xmark"></i></div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </section>
+        <section class="results"> 
+            <h2 class="offscreen">Search Result</h2>
+            <div class="stateBar">
+                <div id="stats" class="stats" aria-label="assertive"></div>
+            </div>
+            <div class="searchResults" id="searchResults">
+
+                <!-- <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Dachshund</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="./Lap-picture.svg" alt="Dachshund">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDiscription">This picture is dedicated to all who show peace
+                                and resist violence.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="hidden-text">
+                    <h1>Search something and see the results.</h1>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a><span aria-hidden="true">&gt;&gt;</span></p>
+        </footer>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
